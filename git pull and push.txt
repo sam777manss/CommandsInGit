@@ -1,0 +1,33 @@
+what is tree // inside master
+
+git clone -b <Branch name> <Repository URL>  // clone from particular branch
+
+push to github steps:
+1 git init // set local 
+2 git add --all // staging
+3 git commit -m "message" // commit and message
+4 git remote add origin URL // origin is the name of remote repository, URL is the repo path
+5 git push --set-upstream origin master // push from master to origin URL
+-------------------------------------------------------------------------
+
+pull // combination of two fetch and merge
+1 git fetch origin // fetch gets all the change history of a tracked branch/repo.
+2 git status // recent changes
+3 git log origin/master // to view the changed file not working for merge
+4 git remote // view the remote repository name
+5 git diff origin/master // 
+6 git merge origin/master // merge current branch with remote branch
+... here is the pull
+git pull origin // do the same as above 1 to 6 lines
+
+// git push command
+git push origin <local-branch-name>:master // master is remote branch 
+
+what are the difference between -> git push origin And git push --set-upstream origin master
+
+------------------------  create new branch on github --------------------------------------
+first take a pull from master // no need 
+git status // status what you have done previos commend
+git branch // current branch (show only local branches)
+git branch -a // local + remote 
+git branch -r // show only reomte branches

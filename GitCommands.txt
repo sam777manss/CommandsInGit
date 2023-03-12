@@ -1,0 +1,29 @@
+cmd : git --version
+
+cmd: git config --global user.name @sam777man
+cmd: git config --global user.email sam777manss@gmail.com
+
+cmd: git init
+cmd: git status
+
+Tracked - files that Git knows about and are added to the repository
+Untracked - files that are in your working directory, but not added to the repository
+
+When you first add files to an empty repository, they are all untracked. To get Git to track them, you need to stage them, or add them to the staging environment.
+
+git add --all // stage all
+git reset // unstage all
+
+Git considers each commit change point or "save point".
+
+git status --short
+
+git commit -a -m  // shorthand for stage + commit
+
+git commit -m "message" // commit after staging
+
+git branch branch_name // create branch
+
+git branch -d branch_name // to delete a branch or git branch -D errorfix
+
+git checkout -b branch_name // checkout and create branch
