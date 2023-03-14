@@ -27,6 +27,11 @@ git branch branch_name // create branch
 git branch -d branch_name // to delete a branch or git branch -D errorfix
 
 git checkout -b branch_name // checkout and create branch
+
+Steps to go back to History
+1 git log // find the hash you want to go back
+2 git reset --hard hash // like this git reset --hard 144adb40ed14da1586203fc6225267eb41223569
+
 -------------  git remote master changes -----------------
 
 -------------  git local master changes -----------------
