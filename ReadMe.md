@@ -1,2 +1,2 @@
-#Hello this is my read me
+#Hello this is my readme.
 creating for teaching myself
